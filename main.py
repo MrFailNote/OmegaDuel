@@ -60,3 +60,4 @@ def getInfo(message):
     else:
         bot.reply_to(message, "Пожалуйста, выберите себе чемпиона для получения справки о нём.")
         
+

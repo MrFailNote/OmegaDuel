@@ -20,6 +20,7 @@ class Hero:
         self.effectpower = []
         self.specials = []
         self.name = self.name
+        self.intel = self.intel
         
     def attack(self, enemy, mod):
         damage = int((self.STR + r.randint(0, self.STR*0.1)) * mod - enemy.DEF)
@@ -258,7 +259,7 @@ class Palan(Hero):
         self.SPD = 50
         self.ACC = 15
         self.AGL = 0
-        self.shield = 200
+        self.shield = 300
         self.shieldState = 1
         self.name = "Palan"
         
