@@ -60,4 +60,13 @@ def getInfo(message):
     else:
         bot.reply_to(message, "Пожалуйста, выберите себе чемпиона для получения справки о нём.")
         
-
+@bot.message_handler(commands = ['fight'])
+def Initiate(message):
+    if message.from_user.username in c.Hero.player.keys():
+        if len(message.text) > 6:
+            targetEnemy = message.text[6:] 
+            
+        else:
+            bot.reply_to(message, "Выберите того, с кем будете сражаться! Не пишите что попало.")
+        
+        
